@@ -1,0 +1,25 @@
+!1513;s
+J
+SAU0JGRASP_MAIN_BOUNDS=%<CONTROL_SHELL_BOUNDS>\012PATH+=%<JGRASP_PATHS>%;\012PATH=+%;%<JGRASP_C_PATHS>\012CYGWIN=nodosfilewarning\012GCC_COLORS=\012-Run\012ADD_EXE_PATH==Y\012
+SCU0JGRASP_MAIN_BOUNDS=%<CONTROL_SHELL_BOUNDS>\012PATH+=%<JGRASP_PATHS>%;\012PATH=+%;%<JGRASP_C_PATHS>\012CYGWIN=nodosfilewarning\012GCC_COLORS=\012-Run\012ADD_EXE_PATH==Y\012
+S+U0JGRASP_MAIN_BOUNDS=%<CONTROL_SHELL_BOUNDS>\012PATH+=%<JGRASP_PATHS>%;\012PATH=+%;%<JGRASP_C_PATHS>\012CYGWIN=nodosfilewarning\012GCC_COLORS=\012-Run\012ADD_EXE_PATH==Y\012
+SJU0JGRASP_MAIN_BOUNDS=%<CONTROL_SHELL_BOUNDS>\012CLASSPATH=+%;%<EXTENSION_CLASSPATHS>\012CLASSPATH+=%<JGRASP_CLASSPATHS>%;\012File\012CLASSPATH+=.%;\012CLASSPATH+=%<SRC_CLASSPATHS>%;\012ProjectOrFile\012PATH+=%<JAVA_BIN_DIR>%;\012PATH+=%<JGRASP_PATHS>%;\012Debug +Debug_Applet\012CLASSPATH=+%;%<INJECTION_CLASSPATHS>\012Compile\012NOT_FOUND_MESSAGE==Make sure you have the full JDK, not just the JRE, installed.\\nThe JDK is available from http://www.oracle.com/technetwork/java/index.html.\012Run_Applet +Debug_Applet\012ADD_APPLETVIEWER_CLASSPATH==Y\012Document\012CLASSPATH=+%;%<TOOL_CLASSPATHS>\012CLASSPATH+=%<CLASSES_DIR>%;\012
+SXU0
+SOU0JGRASP_MAIN_BOUNDS=%<CONTROL_SHELL_BOUNDS>\012PATH+=%<JGRASP_PATHS>%;\012PATH=+%;%<JGRASP_C_PATHS>\012CYGWIN=nodosfilewarning\012GCC_COLORS=\012-Run\012ADD_EXE_PATH==Y\012
+SyU0JGRASP_MAIN_BOUNDS=%<CONTROL_SHELL_BOUNDS>\012PATH+=%<PYTHON_PATH>%;\012PATH+=%<JGRASP_PATHS>%;\012CYGWIN=nodosfilewarning\012GCC_COLORS=
+SPU0
+s#i0
+s#k0
+s#j0
+s#l0
+!2241;d
+[\012  grasp [\012   legendy -49.7\012   legendx -71.0\012   version 1\012   winflags 3\012   eheight 972\012   ewidth 960\012   height 972\012   width 960\012   wbp 0\012   initlayout 0\012   yoffs 1.6000000000000227\012   xoffs 31.099999999999994\012   scale 1.0\012   args ""\012   otherflags 139\012   shallowjar 1\012   visflags 118423807\012  ]\012  directed 1\012  node [\012   ClassInfo [\012    fields "MatrixSolver.src.Matrix\\011(II)V\\011c\\0111\\011\\011\\011MatrixSolver.src.Matrix"\012    condition 0\012    access2 0\012    access 2228257\012    classname "MatrixSolver/src/Matrix"\012    fromclassfiledate 1555091590994\012    fromclassfilename "%\011MatrixSolver%ssrc%sMatrix.class"\012    fromfilename "%\011MatrixSolver%ssrc%sMatrix.java"\012   ]\012   id 0\012   graphics [\012    center [\012     x -71.0\012     y 0.0\012     z 0.0\012    ]\012   ]\012   vgj [\012    flags 0\012   ]\012  ]\012  node [\012   ClassInfo [\012    fields "cols\\011I\\011\\01110\\011\\011\\011MatrixSolver.src.MatrixMathMachine\011matrix1\\011LMatrixSolver/src/Matrix;\\011\\01110\\011\\011\\011MatrixSolver.src.MatrixMathMachine\011matrix2\\011LMatrixSolver/src/Matrix;\\011\\01110\\011\\011\\011MatrixSolver.src.MatrixMathMachine\011rows\\011I\\011\\01110\\011\\011\\011MatrixSolver.src.MatrixMathMachine\011MatrixSolver.src.MatrixMathMachine\\011()V\\011c\\0111\\011\\011\\011MatrixSolver.src.MatrixMathMachine\011main\\011([Ljava/lang/String;)V\\011\\0119\\011\\011\\011MatrixSolver.src.MatrixMathMachine\011startup\\011()V\\011\\01110\\011\\011\\011MatrixSolver.src.MatrixMathMachine"\012    condition 0\012    access2 0\012    access 2490401\012    classname "MatrixSolver/src/MatrixMathMachine"\012    fromclassfiledate 1555091590992\012    fromclassfilename "%\011MatrixSolver%ssrc%sMatrixMathMachine.class"\012    fromfilename "%\011MatrixSolver%ssrc%sMatrixMathMachine.java"\012   ]\012   id 1\012   graphics [\012    center [\012     x 71.0\012     y 0.0\012     z 0.0\012    ]\012   ]\012   vgj [\012    flags 0\012   ]\012  ]\012  edge [\012   ClassInfo [\012    dependencies "MatrixSolver.src.Matrix\\011(II)V\\011c\\011\\011\\011\\011MatrixSolver.src.Matrix"\012    type 3\012   ]\012   source 0\012   target 1\012  ]\012 ]!165;g
+%\011MatrixSolver%ssrc%sManualMatrix.java
+%\011MatrixSolver%ssrc%sMatrixMathMachine.java
+%\011MatrixSolver%ssrc%sMatrix.java
+%\011MatrixSolver%ssrc%sAutoMatrix.java
+!165;f
+%\011MatrixSolver%ssrc%sManualMatrix.java
+%\011MatrixSolver%ssrc%sMatrixMathMachine.java
+%\011MatrixSolver%ssrc%sMatrix.java
+%\011MatrixSolver%ssrc%sAutoMatrix.java
