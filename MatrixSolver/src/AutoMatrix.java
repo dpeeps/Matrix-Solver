@@ -11,12 +11,7 @@ public class AutoMatrix extends Matrix
       
       createValues();
    }
-   
-   public AutoMatrix (int rows, int cols, boolean own)
-   {
-      super(rows,cols);
-   }
-   
+
    protected void createValues()
    {
       Random rand = new Random();
@@ -42,7 +37,11 @@ public class AutoMatrix extends Matrix
       {
          for (int c = 0; c < cols; c++)
          {
-            returnString += matrix[r][c] + " ";
+            if (matrix[r][c] >= 10)
+               returnString += matrix[r][c] + " ";
+               
+            else
+               returnString += " " + matrix[r][c] + " ";
          }
          returnString += "\n";
       }
