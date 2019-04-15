@@ -18,6 +18,23 @@ import java.util.Scanner;
 *   along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+/**
+*  A matrix math machine that can do addition, subtraction and multiplication to matrices.
+*  This is a work in progress and is moving along quickly, but is heavily in development and not feature rich or bug free yet.
+*  
+*  V 0.5 4/13/2019
+*     - First external launch of project, still only had addition and was missing the second half of the own set.
+*     - Had very basic functions available but was operational to add matrices up to the size limited by an int
+*
+*  V 0.5.1 4/15/2019
+*     - Created the ability to do subtraction with the matrices, and finished the own set of input
+*     - Now will not run the math section of the program if the matrices are both not created
+*     - This is still early development and is missing almost half of the possible math abilities that will be added in V0.6
+*
+*
+*  MatrixMathMachine Copyright (c) 2019 David Pieper
+*  To get in touch with author send mail to ds016524dp@dsisdconnect.com or go to github.com/dpeeps/Matrix-Solver
+*/
 
 public class MatrixMathMachine
 {
@@ -27,7 +44,8 @@ public class MatrixMathMachine
    public static void main(String args[])
    {
       startup();
-      doMath();
+      if (matrix1 != null && matrix2 != null)
+         doMath();
    }
    
    private static void startup()
@@ -69,6 +87,14 @@ public class MatrixMathMachine
          int cols = Integer.parseInt(numCols);
          matrix1 = new ManualMatrix(rows, cols);
          System.out.println("Matrix 1:\n" + matrix1);
+         System.out.print("How many rows would you like the second matrix to have? ------------->     ");
+         numRows = modeChecker.nextLine();
+         rows = Integer.parseInt(numRows);
+         System.out.println("How many columns would you like the second matrix to have? -------->     ");
+         numCols = modeChecker.nextLine();
+         cols = Integer.parseInt(numCols);
+         matrix2 = new ManualMatrix(rows, cols);
+         System.out.println("Matrix 2:\n" + matrix2);
       }
       
       else if(setMode.equals("CHANGE"))
@@ -193,7 +219,39 @@ public class MatrixMathMachine
       }
       else if (choice.equals("SUB") || choice.equals("SUBTRACT"))
       {  
-         
+         if (matrix1.rows == matrix2.rows && matrix1.cols == matrix2.cols)
+         {
+            System.out.println("Adding the matrices");
+            for (int r = 0; r < matrix1.rows; r++)
+            {
+               for (int c = 0; c < matrix1.cols; c++)
+               {
+                  matrix1.matrix[r][c] = matrix1.matrix[r][c] - matrix2.matrix[r][c];
+                  
+                  if (matrix1.matrix[r][c] <= -100)
+                  {
+                     System.out.print(matrix1.matrix[r][c] + " ");
+                  }
+                  else if ((matrix1.matrix[r][c] >= -99 && matrix1.matrix[r][c] < -9) || matrix1.matrix[r][c] >= 100)
+                  {
+                     System.out.print(" " + matrix1.matrix[r][c] + " ");
+                  }
+                  else if ((matrix1.matrix[r][c] >= -9 && matrix1.matrix[r][c] < 0) || matrix1.matrix[r][c] >= 10)
+                  {
+                     System.out.print("  " + matrix1.matrix[r][c] + " ");
+                  }
+                  else
+                  {
+                     System.out.print("   " + matrix1.matrix[r][c] + " ");
+                  }
+               }
+               System.out.println();
+            }
+         }
+         else
+         {
+            System.out.println("To be able to subtract matrices the rows and columns need to be of the same length.");
+         }
       }
       else if (choice.equals("MULT") || choice.equals("MULTIPLY"))
       {
