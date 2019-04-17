@@ -12,8 +12,8 @@ s#i0
 s#k0
 s#j0
 s#l0
-!82;u
-a0	b68	c255	f%\011MatrixSolver.jar	g%\011MatrixSolver.zip	hManifest-Version\0111.0!165;g
+!136;u
+a0	b68	c255	f%\011MatrixSolver.jar	g%\011MatrixSolver.zip	hManifest-Version\0110.5.1\011Main-Class\011MatrixSolver.src.MatrixMathMachine!165;g
 %\011MatrixSolver%ssrc%sManualMatrix.java
 %\011MatrixSolver%ssrc%sMatrixMathMachine.java
 %\011MatrixSolver%ssrc%sMatrix.java

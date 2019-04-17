@@ -90,7 +90,7 @@ public class MatrixMathMachine
          System.out.print("How many rows would you like the second matrix to have? ------------->     ");
          numRows = modeChecker.nextLine();
          rows = Integer.parseInt(numRows);
-         System.out.println("How many columns would you like the second matrix to have? -------->     ");
+         System.out.print("How many columns would you like the second matrix to have? ---------->     ");
          numCols = modeChecker.nextLine();
          cols = Integer.parseInt(numCols);
          matrix2 = new ManualMatrix(rows, cols);
@@ -255,7 +255,42 @@ public class MatrixMathMachine
       }
       else if (choice.equals("MULT") || choice.equals("MULTIPLY"))
       {
-         
+         int largestValue = 0;
+         if (matrix1.rows == matrix2.cols && matrix1.cols == matrix2.rows)
+         {
+            for (int r = 0; r < matrix1.rows; r++)
+            {
+               for (int c = 0; c < matrix1.cols; c++)
+               {
+                  matrix1.matrix[r][c] = matrix1.matrix[r][c] * matrix2.matrix[c][r];
+                  if (matrix1.matrix[r][c] >= largestValue)
+                     largestValue = matrix1.matrix[r][c];
+               }
+            }
+         }
+         else
+         {
+            System.out.println("To be able to multiply matrices the columns of the first matrix and the rows of the second matrices.");
+            return;
+         } 
+         int spaceCnt = 0;
+         spaceCnt = largestValue;
+         String output = "";
+         for (int r = 0; r < matrix1.rows; r++)
+         {
+            for (int c = 0; c < matrix1.cols; c++)
+            {
+               int numSpaces = (spaceCnt - matrix1.matrix[r][c]) / 1000;
+               String addedSpaces = "";
+               for (int space = 0; space < numSpaces; space++)
+               {
+                  addedSpaces = addedSpaces + " ";
+               }
+               output = output + addedSpaces + matrix1.matrix[r][c] + " ";
+            }
+            output = output + "\n";
+         }
+         System.out.print(output);
       }
       else if (choice.equals("DIV") || choice.equals("DIVIDE"))
       {
